@@ -1,6 +1,6 @@
 #include <iostream> //flujo de entrada y salida
 #include <string> //manejo de cadenas (getline)
-#include <limits>
+#include <limits> //para numeric limits
 
 
 void saltoDeLinea(){
@@ -88,7 +88,7 @@ int main() {
             break;
         }
         // Limpiamos el '\n' pendiente
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); //limpiar el búfer de entrada de cin hasta encontrar un salto de línea ('\n') 
     }
 
     saltoDeLinea();
